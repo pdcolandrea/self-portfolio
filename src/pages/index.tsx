@@ -1,24 +1,7 @@
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
-
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-import Vercel from '~/svg/Vercel.svg';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
 
 export default function HomePage() {
   return (
@@ -27,45 +10,38 @@ export default function HomePage() {
       <Seo />
 
       <main>
+        <header className='row flex justify-between px-4 pt-4 pb-2'>
+          <div className='row flex items-center'>
+            <span className='mr-1 h-4 w-4 rounded-full bg-yellow-400' />
+            <p>PAUL</p>
+          </div>
+
+          <nav>
+            <span>Home</span>
+            <span>Resume</span>
+            <span>Spotify</span>
+          </nav>
+        </header>
+
         <section className='bg-white'>
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <Vercel className='text-5xl' />
-            <h1 className='mt-4'>
-              Next.js + Tailwind CSS + TypeScript Starter
-            </h1>
-            <p className='mt-2 text-sm text-gray-800'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
-            </p>
-            <p className='mt-2 text-sm text-gray-700'>
-              <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                See the repository
-              </ArrowLink>
-            </p>
-
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-              className='mt-4'
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='Deploy with Vercel'
-              />
-            </UnstyledLink>
-
-            <footer className='absolute bottom-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
-              </UnderlineLink>
-            </footer>
+          <div className='grid max-h-96 max-w-full grid-cols-2 gap-4 px-4 pb-4'>
+            <div className='col-span-2 flex h-96 overflow-hidden'>
+              <div className='relative w-full basis-3/5 rounded-lg bg-gray-100 p-6 pr-60'>
+                <div className='absolute top-0 -left-4 h-80 w-80 animate-blob rounded-full bg-purple-300 opacity-80 mix-blend-multiply blur-xl filter'></div>
+                <div className='animation-delay-2000 absolute left-56 top-0 h-80 w-80 animate-blob rounded-full bg-yellow-300 opacity-80 mix-blend-multiply blur-xl filter'></div>
+                <div className='animation-delay-4000 absolute -bottom-8 left-20 h-80 w-80 animate-blob rounded-full bg-pink-300 opacity-80 mix-blend-multiply blur-xl'></div>
+                <h1 className='text-5xl font-bold leading-relaxed'>
+                  Hi, I'm Paul. Not the monkey, just a guy who loves software :){' '}
+                </h1>
+              </div>
+              <div className='ml-4 flex-1 rounded-lg bg-yellow-500'></div>
+            </div>
+            <div className='h-96 rounded-lg bg-purple-500'>
+              <h1>Software Engineer @ ByteFederal</h1>
+            </div>
+            <div className='h-96 rounded-lg bg-yellow-200'>
+              <h1>Contact Me</h1>
+            </div>
           </div>
         </section>
       </main>

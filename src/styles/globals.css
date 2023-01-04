@@ -93,6 +93,12 @@
 }
 
 @layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
       linear-gradient(
