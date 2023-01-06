@@ -38,8 +38,8 @@ export default function HomePage() {
                   Hi, I'm Paul. Not the monkey, just a guy who loves software :){' '}
                 </h1>
                 <p className='text-lg'>
-                  I care alot about design for positive impact and enjoy
-                  creating user-centric, delightful, fun user experiences
+                  Currently enjoy working in fintech and encountering the
+                  challenges that come alongside it.
                 </p>
 
                 <div className='absolute bottom-6 flex flex-row content-center items-center justify-center '>
@@ -67,12 +67,12 @@ export default function HomePage() {
 
             <div className='rounded-lg bg-purple-500 p-8 text-white'>
               <h1 className='text-2xl'>Software Engineer</h1>
-              <p className='font-thin'>ByteFederal Inc.</p>
+              <p className='font-light'>ByteFederal Inc.</p>
             </div>
 
             <div className='relative rounded-lg bg-gray-600 p-8 text-white'>
               <h1 className='text-2xl'>Contact Me</h1>
-              <p>
+              <p className='font-light'>
                 Shoot me an email anytime at{' '}
                 {/* <a className='' href='mailto:colandrea@gmail.com'>
                   colandreapaul@gmail.com
