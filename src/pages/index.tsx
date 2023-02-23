@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import { WelcomeStatement } from '@/components/containers/HomeBubbles';
+import {
+  SelfieBubble,
+  WelcomeStatement,
+} from '@/components/containers/HomeBubbles';
 import Layout from '@/components/layout/Layout';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
@@ -12,7 +15,7 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main className='mx-auto h-screen max-w-screen-xl'>
+      <main className='mx-auto max-h-screen max-w-screen-xl'>
         {/* <header className='row flex justify-between px-4 pt-4 pb-2'>
           <div className='row flex items-center'>
             <span className='mr-1 h-4 w-4 rounded-full bg-yellow-400' />
@@ -27,18 +30,9 @@ export default function HomePage() {
         </header> */}
 
         <section className='flex h-screen flex-row flex-wrap p-3'>
-          <div className='flex animate-ping overflow-hidden'>
+          <div className='flex overflow-hidden'>
             <WelcomeStatement />
-
-            <div className='relative ml-4 flex flex-1 rounded-lg bg-yellow-500'>
-              <Image
-                src='/images/paulc.jpg'
-                objectFit='cover'
-                fill
-                alt='self picture'
-                className='rounded-lg'
-              />
-            </div>
+            <SelfieBubble />
           </div>
 
           <div className='mt-4 flex flex-1'>
@@ -58,9 +52,6 @@ export default function HomePage() {
               <h1 className='text-2xl'>Contact Me</h1>
               <p className='font-light'>
                 Shoot me an email anytime at{' '}
-                {/* <a className='' href='mailto:colandrea@gmail.com'>
-                  colandreapaul@gmail.com
-                </a> */}
                 <UnderlineLink href='mailto:colandreapaul@gmail.com'>
                   colandreapaul@gmail.com
                 </UnderlineLink>

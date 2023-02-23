@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import * as React from 'react';
 
 import GithubButton from '@/components/logos/Github';
@@ -29,6 +30,20 @@ export function WelcomeStatement() {
         <LinkedinLogo />
         <GithubButton />
       </div>
+    </div>
+  );
+}
+
+export function SelfieBubble() {
+  return (
+    <div className='relative ml-4 flex flex-1 rounded-lg bg-yellow-500'>
+      <Image
+        src='/images/paulc.jpg'
+        objectFit='cover'
+        fill
+        alt='self picture'
+        className='rounded-lg'
+      />
     </div>
   );
 }
