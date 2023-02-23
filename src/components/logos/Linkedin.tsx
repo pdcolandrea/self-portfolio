@@ -9,7 +9,7 @@ export default function LinkedinLogo() {
         alt='linkedin'
         width={40}
         height={40}
-        className='mr-2 rounded-full'
+        className='mr-2 rounded-full mix-blend-multiply'
       />
     </div>
   );
