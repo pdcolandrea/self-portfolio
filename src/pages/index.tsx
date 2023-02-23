@@ -12,10 +12,9 @@ import Seo from '@/components/Seo';
 export default function HomePage() {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle='Home' />
 
-      <main className='mx-auto max-h-screen max-w-screen-xl'>
+      <main className='mx-auto max-h-screen max-w-screen-xl overscroll-none'>
         {/* <header className='row flex justify-between px-4 pt-4 pb-2'>
           <div className='row flex items-center'>
             <span className='mr-1 h-4 w-4 rounded-full bg-yellow-400' />
@@ -29,7 +28,7 @@ export default function HomePage() {
           </nav>
         </header> */}
 
-        <section className='flex h-screen flex-row flex-wrap p-3'>
+        <section className='flex h-screen flex-row flex-wrap p-4'>
           <div className='flex overflow-hidden'>
             <WelcomeStatement />
             <SelfieBubble />
@@ -46,6 +45,7 @@ export default function HomePage() {
                 width={180}
                 height={180}
               /> */}
+              <p className='mt-2 font-bold'>Site under development</p>
             </div>
 
             <div className='relative ml-4 w-full rounded-lg bg-gray-600 p-8 text-white'>

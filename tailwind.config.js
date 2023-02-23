@@ -64,7 +64,7 @@ module.exports = {
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
-        blob: 'blob 4s infinite',
+        blob: 'blob 6s infinite',
       },
     },
   },
